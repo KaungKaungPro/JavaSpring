@@ -11,7 +11,7 @@ import sg.nus.iss.getstarted.workshop.model.repository.FakeCourseRepository;
 
 @Controller
 public class CourseController {
-  @GetMapping("courses")
+  @GetMapping("courses")		//changes
   public String courseOfTheDay(Model model) {
     List<Course> courses = FakeCourseRepository.getCourses();
     
